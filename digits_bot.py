@@ -154,7 +154,7 @@ SEED_ROI = _env("SEED_ROI", 0.90)  # will be updated live from proposals
 
 # ── Martingale config ────────────────────────────────────────────────────────
 MARTINGALE_BASE_STAKE = _env("MARTINGALE_BASE_STAKE", 0.35)
-MARTINGALE_FACTOR     = _env("MARTINGALE_FACTOR",     1.23)
+MARTINGALE_FACTOR     = _env("MARTINGALE_FACTOR",     1.35)
 MARTINGALE_MAX_STEPS  = _env("MARTINGALE_MAX_STEPS",  4)
 MIN_STAKE             = MARTINGALE_BASE_STAKE
 
