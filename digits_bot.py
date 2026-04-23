@@ -116,7 +116,7 @@ def _env(key, default):
 # Deriv connection
 API_TOKEN  = _env("DERIV_API_TOKEN", "3nMoTkW49VHJqhH")
 APP_ID     = _env("DERIV_APP_ID",    1089)
-SYMBOL     = _env("SYMBOL",          "R_10")
+SYMBOL     = _env("SYMBOL",          "R_100")
 
 # Contract
 DURATION_TICKS = 5       # 5-tick expiry
@@ -154,7 +154,7 @@ SEED_ROI = _env("SEED_ROI", 0.90)  # will be updated live from proposals
 
 # ── Martingale config ────────────────────────────────────────────────────────
 MARTINGALE_BASE_STAKE = _env("MARTINGALE_BASE_STAKE", 0.35)
-MARTINGALE_FACTOR     = _env("MARTINGALE_FACTOR",     1.43)
+MARTINGALE_FACTOR     = _env("MARTINGALE_FACTOR",     1.15)
 MARTINGALE_MAX_STEPS  = _env("MARTINGALE_MAX_STEPS",  4)
 MIN_STAKE             = MARTINGALE_BASE_STAKE
 
