@@ -131,8 +131,8 @@ MIN_WARMUP_TICKS = _env("MIN_WARMUP_TICKS", 60)     # ticks before trading start
 EWMA_ALPHA      = _env("EWMA_ALPHA",      0.05)
 CALM_FACTOR     = _env("CALM_FACTOR",     0.85)   # median σ × 0.85 = CALM ceiling
 NORMAL_FACTOR   = _env("NORMAL_FACTOR",   1.25)   # median σ × 1.25 = NORMAL ceiling
-RECAL_INTERVAL  = _env("RECAL_INTERVAL",  7)    # recalibrate every N ticks
-RECAL_WINDOW    = _env("RECAL_WINDOW",    7)    # rolling window size for σ samples
+RECAL_INTERVAL  = _env("RECAL_INTERVAL",  15)    # recalibrate every N ticks
+RECAL_WINDOW    = _env("RECAL_WINDOW",    15)    # rolling window size for σ samples
 # Actual SIGMA_CALM / SIGMA_NORMAL are written by LiveRecalibrator at runtime.
 # Sentinel values — will be overwritten before any trade is evaluated.
 SIGMA_CALM   = float("inf")
